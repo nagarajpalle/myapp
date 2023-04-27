@@ -12,6 +12,8 @@ COPY . .
 
 RUN npm run build
 
+USER root
+
 EXPOSE 8080
 
 CMD ["npm","start"]
